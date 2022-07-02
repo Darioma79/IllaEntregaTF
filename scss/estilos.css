@@ -20,7 +20,7 @@ body .header {
   color: rgb(255, 255, 255);
 }
 body .header .video {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -43,4 +43,12 @@ body .header-oscuro {
 }
 body .header-texto {
   z-index: 2;
+}
+body .header-texto img {
+  width: 200px;
+  height: 200px;
+}
+
+main {
+  background-color: rgb(102, 84, 100);
 }/*# sourceMappingURL=estilos.css.map */

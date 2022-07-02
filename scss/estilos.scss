@@ -19,7 +19,7 @@ body {
         align-items: center;
         color: $color1;
         .video {
-            width: 100%;
+            width: 100vw;
             height: 100vh;
             position: absolute;
             top: 0;
@@ -46,9 +46,16 @@ body {
     }
     .header-texto {
         z-index: 2;
-        h1{
+        img {            
+            width: 200px;
+            height: 200px;              
             
         }
+    
     }
     
+}
+main {
+    background-color: $color3;
+
 }
