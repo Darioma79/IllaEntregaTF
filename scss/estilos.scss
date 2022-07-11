@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@300&family=Source+Serif+Pro:ital,wght@1,300&display=swap');
+
 $color1:rgb(255, 255, 255);
 $color2: rgb(0,0,0);
 $color3:rgb(102, 84, 100);
@@ -8,11 +10,17 @@ $color4:rgb(20, 9, 16);
     margin: 0;
     padding: 0;
 }
-body {
+body {    
     font-size: 1rem;
     line-height: 1.5;
     color: $color1;
     overflow-x: hidden; /*Para que no aparescan las barras de scroll cuando nos pasemos del tamaña de pantalla*/
+    header{
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
     .header {
         height: 100vh; /*el total del ancho de pantalla*/
         display: flex;
@@ -55,6 +63,44 @@ body {
     }
     
 }
+/*Barra de Menu*/
+nav{
+    width: 100%;
+    height: 50px;  
+    background-color: rgb(128, 121, 155); 
+    padding: 0;
+    margin: 0;   
+    ul{
+        width: 100%;
+        height: 100%;
+        background-color: rgb(128, 121, 155);
+        padding: 0;
+        margin: 0;  
+        display: flex;
+        list-style: none;
+        li {
+            height: 100%;
+            a {
+                width: 100%;
+                height: 100%;
+                color: $color1;
+                font-family: 'Roboto', sans-serif;
+                align-items: center;
+                transition: all 300ms ease;
+                
+                &:hover{
+                    transform: scale(1.1);
+                    background-color: $color1;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px 0px $color2;
+                }
+            }
+
+        }      
+
+    }
+        
+    }
 main {
     background-color: $color3;
 
